@@ -6,20 +6,19 @@
 
 ---
 
-## 安裝（從 GitHub 下載的人看這裡）
+## 安裝
 
 ### 需要的東西
 | 項目 | 說明 |
 |---|---|
 | 作業系統 | Windows 10 / 11（測試環境是 Windows 11） |
 | Python | 要有 `py` 指令：到 [python.org](https://www.python.org/downloads/) 安裝任何版本的 Python，安裝時勾選 **py launcher**。安裝程式會自己再裝 Python 3.10（yolov7 需要 3.10，太新的版本不行） |
-| 顯示卡 | 建議 NVIDIA 顯卡，並把驅動程式更新到最新（RTX 50 系列一定要新驅動）。沒有 NVIDIA 顯卡也能跑，但會用 CPU，非常慢，訓練幾乎不實際 |
+| 顯示卡 | 建議 NVIDIA 顯卡，並把驅動程式更新到最新。 |
 | 硬碟空間 | 約 6GB（套件約 5GB，模型約 160MB） |
 | 網路 | 第一次安裝要下載約 3GB |
 
 ### 安裝步驟
 1. **下載程式**：在 GitHub 頁面按綠色的 **Code** → **Download ZIP**，解壓縮到一個**路徑沒有中文、空白、emoji** 的資料夾，例如 `C:\yolo\yolov7-test`（有中文的路徑 OpenCV 會讀不到圖片）。
-   會用 git 的話也可以：`git clone <這個 repo 的網址>`
 2. **安裝**：進到資料夾，**點兩下 `setup.bat`**。它會自動做三件事：
    - 建立 Python 3.10 的虛擬環境 `venv\`（所有套件都裝在這裡，不會影響電腦裡其他 Python）
    - 依照 `requirements.txt` 安裝固定版本的套件
