@@ -1,0 +1,19 @@
+# 環境（每個人用 setup 自己建立）
+venv/
+__pycache__/
+*.py[cod]
+
+# 模型權重：檔案太大（GitHub 單檔上限 100MB），由 setup 自動下載
+*.pt
+
+# 訓練、辨識的輸出和上傳的資料集
+yolov7/runs/
+datasets/
+coco128/
+videos/
+*.cache
+
+# 本機紀錄（usage.log 有使用者的 IP，不要上傳）
+usage.log
+train_log.txt
+app_log.txt
